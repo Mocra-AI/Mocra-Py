@@ -5,7 +5,7 @@ Python SDK for [Mocra's Observe API](https://docs.mocra.io/) — observability f
 ## Installation
 
 ```bash
-pip install -e .
+pip install mocra.
 ```
 
 ## Requirements
@@ -75,34 +75,3 @@ for criterion in result.criteria:
 with VideoObservabilityApi("YOUR_API_KEY") as api:
     result = api.score_video("https://example.org/video.mp4")
 ```
-
-## Development
-
-### Setup
-
-```bash
-pip install -e ".[dev]"
-pre-commit install  # Run lint on git commit
-```
-
-### Lint
-
-```bash
-ruff check mocra tests
-```
-
-### Test
-
-```bash
-pytest tests/ -v
-```
-
-### Publishing to PyPI
-
-1. Create an API token at [pypi.org/manage/account/token](https://pypi.org/manage/account/token)
-2. Add `PYPI_API_TOKEN` as a repository secret in GitHub
-3. Create a release or run the workflow manually — the publish workflow runs on release publish and `workflow_dispatch`
-
-## License
-
-MIT

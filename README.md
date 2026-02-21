@@ -1,11 +1,11 @@
 # Mocra Python SDK
 
-Python SDK for [Mocra's Observe API](https://docs.mocra.io/) — observability for video generation workflows. The API mirrors the [TypeScript SDK](https://github.com/Mocra-AI/Mocra) so you can switch between languages easily.
+Python SDK for [Mocra's Observe API](https://docs.mocra.io/) — observability for video generation workflows.
 
 ## Installation
 
 ```bash
-pip install mocra.
+pip install mocra
 ```
 
 ## Requirements
